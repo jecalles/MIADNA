@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/jecalles/MIADNA/blob/master/MIADNA_schema.json",
+
+  "title": "MIADNA Schema v0.1 ",
+  "description": "A minimum information standard for describing a DNA sequence, such that its design, construction, validation, and use are full characterized",
+
+  "type": "object",
+  "properties": {
+    "Requested Sequence": {
+        "type": "object",
+        "properties" : {
+          "Sequence" : {},
+          "Annotation" : {},
+        }
+      },
+    "Design Rules" : {
+      "type" : "object",
+      "properties" : {
+        "Design Tolerances" : {
+          "type" : "object",
+          "properties" : {
+            "GC Limits" : {},
+            "Repeat Limits" : {},
+            "Fragment Length Limits" : {},
+            "Other" : {}
+          }
+        }
+      }
+    },
+    "Designed Sequence": {
+      "type" : "object",
+      "properties" : {
+      }
+    },
+    "Characterization": {
+      "type" : "object",
+      "properties" : {
+      }
+    },
+    "Making": {
+      "type" : "object",
+      "properties" : {
+      }
+    },
+    "Synthesized Sequence":{
+      "type" : "object",
+      "properties" : {
+      }
+    }
+  }
+}
+
+// Still to do
+- figure out how to include .fasta files in schema
+- add description fields for each sub object
